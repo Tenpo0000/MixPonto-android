@@ -1,5 +1,7 @@
 # MixPonto — integração móvel com Firebase Spark
 
+> Material histórico. O guia INSTALACAO-SPARK.md citado nesta entrega foi removido. Para a configuração atual de contas e permissões, consulte o [README principal](../README.md). As instruções antigas de titulares na raiz não descrevem a estrutura atual.
+
 Esta cópia do site consulta o Realtime Database com o login titular, reúne batidas RFID e móveis no cartão, calcula horas pelos pares e imprime a tabela unificada pelo diálogo de impressão/PDF.
 
 Acesso móvel: `/src/mobile.html`. O titular seleciona um funcionário já existente, define e-mail e senha e clica em **Criar e liberar acesso**. O funcionário entra no aplicativo com esses dados, sem código ou confirmação obrigatória de e-mail. A mesma tela lista e revoga vínculos sem apagar o histórico.
