@@ -1,0 +1,30 @@
+i  emulators: Starting emulators: auth, database
+i  emulators: Detected demo project ID "demo-mixponto", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: Database Emulator logging to database-debug.log
+(node:1632) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+i  Running script: node --test --test-concurrency=1 test/discovery.test.mjs test/gestao-integration.test.mjs
+✔ API real valida token Firebase, descobre duas contas sem índice e reflete revogação (931.033ms)
+✔ titular não confirmado recebe somente a própria conta e a raiz continua inacessível (54.1344ms)
+[2026-10-21T02:13:07.232Z]  @firebase/database: FIREBASE WARNING: set at /contas/c_2267e4fdc190b486488445c1a432a0dd/auditoria/falso failed: permission_denied 
+[2026-10-21T02:13:07.241Z]  @firebase/database: FIREBASE WARNING: set at /contas/c_2267e4fdc190b486488445c1a432a0dd/meta/revendedorUid failed: permission_denied 
+[2026-10-21T02:13:07.244Z]  @firebase/database: FIREBASE WARNING: set at /contas/c_2267e4fdc190b486488445c1a432a0dd/usuarios/elevado failed: permission_denied 
+[2026-10-21T02:13:07.293Z]  @firebase/database: FIREBASE WARNING: update at /contas/c_2267e4fdc190b486488445c1a432a0dd/funcionarios/f1 failed: permission_denied 
+✔ backend real cria duas contas, protege auditoria e isola revogação durante sessão aberta (552.2115ms)
+✔ convite é aceito no backend real sem alterar senha e não reativa após cancelamento (137.1392ms)
+✔ criação concorrente usa IDs distintos e retry idempotente sem sobrescrever conta existente (96.5922ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2899.3294
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+!  Database Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

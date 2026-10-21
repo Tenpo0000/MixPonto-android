@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="privacy_company" type="id" />
+    <item name="privacy_type" type="id" />
+    <item name="privacy_details" type="id" />
+    <item name="privacy_feedback" type="id" />
+    <string name="privacy_back">Voltar</string>
+    <string name="privacy_submit">Registrar pedido</string>
+    <string name="privacy_list">Consultar pedidos e respostas</string>
+    <string name="privacy_success">Pedido registrado. Protocolo: %1$s. Consulte a resposta neste canal.</string>
+    <string name="privacy_submit_error">Não foi possível confirmar. Confira seu vínculo e o ID da conta. Consulte os pedidos antes de alterar o conteúdo e tentar novamente, ou procure a empresa responsável.</string>
+    <string name="privacy_list_error">Não foi possível consultar. Confira o login, a conta e a conexão.</string>
+    <string name="login_company_required">Informe o ID da conta exibido no cabeçalho do site.</string>
+    <string name="login_credentials_required">Preencha e-mail e senha.</string>
+    <string name="login_company_save_error">Não foi possível guardar a empresa selecionada. Tente novamente.</string>
+    <string name="login_email_required">Preencha seu e-mail acima.</string>
+</resources>

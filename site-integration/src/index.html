@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Ponto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>Sistema de ponto</h2>
+        </div>
+        <nav class="menu">
+          <button class="menu-item ativo">
+            <span class="icone"></span>
+            Início
+          </button>
+          <button class="menu-item">
+            <span class="icone"></span>
+            Cadastro
+          </button>
+          <a class="menu-item" href="mobile.html">Acesso pelo celular</a>
+          <button class="menu-item">
+            <span class="icone"></span>
+            Movimentações
+          </button>
+          <button class="menu-item">
+            <span class="icone"></span>
+            Configurações
+          </button>
+        </nav>
+        <button class="btn-sobre">Sobre</button>
+      </aside>
+
+      <main class="conteudo">
+        <header class="topo">
+          <img src="/img/lupa.png" alt="icone de lupa" />
+          <input
+            type="text"
+            class="busca"
+            placeholder="Buscar funcionário..."
+          />
+          <div class="info-usuario">
+            <button class="notificacoes"></button>
+            <div class="usuario">
+              <span>Titular da empresa</span>
+              <small>ADMINISTRADOR</small>
+            </div>
+            <img src="/img/Joãzinho do RH.png" alt="Avatar" class="avatar" />
+          </div>
+        </header>
+
+        <section class="area-trabalho">
+          <div class="breadcrumb">
+            <span>Movimentações > </span>
+            <span class="destacado">Cartão ponto</span>
+          </div>
+
+          <div class="cabecalho-pagina">
+            <div>
+              <h1>Cartão Ponto</h1>
+              <p>Horário de Brasília · RFID e celular</p>
+              <label>Data inicial <input id="data-inicial" type="date"></label>
+              <label>Data final <input id="data-final" type="date"></label>
+            </div>
+            <div class="botoes-acao">
+              <button class="btn btn-primario" disabled title="Ajustes manuais indisponíveis nesta versão">+ Inclusão Manual</button>
+              <button class="btn btn-secundario">Exportar PDF</button>
+            </div>
+          </div>
+
+          <div class="cards-info">
+            <div class="card">
+              <h3>Total de Horas</h3>
+              <p class="valor">0h</p>
+              <small>Pares de entrada e saída no período</small>
+            </div>
+            <div class="card">
+              <h3>Saldo de Banco</h3>
+              <p class="valor positivo">—</p>
+              <small>Não apurado</small>
+            </div>
+            <div class="card">
+              <h3>Faltas/Atrasos</h3>
+              <p class="valor negativo">—</p>
+              <small>Não apurado</small>
+            </div>
+            <div class="card">
+              <h3>Status do Mês</h3>
+              <p class="status">—</p>
+              <br />
+              <small>Não apurado</small>
+            </div>
+          </div>
+
+          <div class="tabela-container">
+            <table class="tabela-registros">
+              <thead>
+                <tr>
+                  <th>Ultimos registros</th>
+                  <th>ENTRADA 1</th>
+                  <th>SAÍDA 1</th>
+                  <th>ENTRADA 2</th>
+                  <th>SAÍDA 2</th>
+                  <th>TOTAL</th>
+                  <th>BATIDAS / ORIGEM</th>
+                  <th>AÇÕES</th>
+                </tr>
+              </thead>
+              <tbody id="corpo-tabela"></tbody>
+            </table>
+            <p class="rodape-tabela">Entre como titular para carregar os registros.</p>
+          </div>
+
+          </section>
+      </main>
+    </div>
+
+    <script type="module" src="/fireBase_config.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

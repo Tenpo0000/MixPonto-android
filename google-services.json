@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "910575501364",
+    "firebase_url": "https://mixponto-ffe50-default-rtdb.firebaseio.com",
+    "project_id": "mixponto-ffe50",
+    "storage_bucket": "mixponto-ffe50.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910575501364:android:8381ea243fc51eaebfca61",
+        "android_client_info": {
+          "package_name": "br.com.mixponto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910575501364-f4qsi4ap62n3if7c8sm0ejo5cov03pd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG2eqCo6utJYbl8u9oaiLqw_1yMFzoLA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910575501364-f4qsi4ap62n3if7c8sm0ejo5cov03pd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

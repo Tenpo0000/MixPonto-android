@@ -1,0 +1,174 @@
+{
+  "versao": "2026-10-20.1",
+  "atualizadoEm": "20/10/2026",
+  "estado": "preliminar",
+  "responsavel": {
+    "nome": "",
+    "documento": "",
+    "endereco": "",
+    "emailPrivacidade": ""
+  },
+  "aviso": "Projeto em preparação. A identificação e o contato do responsável pelo serviço ainda não foram definidos. Estes textos são preliminares e não constituem certificação de conformidade ou oferta comercial. Para dados de vínculo de trabalho, procure também a empresa empregadora, pelos canais que ela já disponibiliza.",
+  "documentos": [
+    {
+      "id": "privacidade",
+      "titulo": "Política de privacidade",
+      "secoes": [
+        {
+          "titulo": "Responsabilidades",
+          "texto": "A empresa empregadora define as finalidades e as bases legais do tratamento de cadastros e registros de ponto sob sua responsabilidade. O responsável pela plataforma pode atuar como operador nesses tratamentos e como controlador de operações próprias de acesso e segurança, conforme a atividade e os contratos efetivamente estabelecidos. A identificação desse responsável ainda precisa ser preenchida; a ausência de CNPJ não elimina obrigações aplicáveis a pessoas físicas."
+        },
+        {
+          "titulo": "Dados e finalidades",
+          "texto": "O sistema utiliza nome, matrícula, vínculo com a conta, admissão, jornada e registros de horário para a gestão de ponto. E-mail e identificador de autenticação são usados quando há acesso ao site ou aplicativo. CPF, fotografia e cartão RFID são campos opcionais, que a empresa só deve preencher se necessários e amparados em finalidade e base legal documentadas. Fotografias não são usadas por esta versão para reconhecimento facial. Não há coleta de GPS, contatos, microfone ou câmera pelo aplicativo Android. Motivos de ausência e justificativas podem revelar dados sensíveis. Não inclua diagnóstico, CID ou documentos de saúde em campos livres sem necessidade; a empresa deve avaliar as hipóteses do art. 11 da LGPD quando aplicáveis."
+        },
+        {
+          "titulo": "Bases legais e transparência",
+          "texto": "A empresa deve avaliar e registrar a base legal adequada a cada finalidade, como obrigação legal ou regulatória, execução de contrato e exercício regular de direitos, quando efetivamente aplicáveis. Consentimento não é uma autorização genérica para usar dados trabalhistas. Se uma finalidade opcional depender de consentimento, a recusa não deve bloquear funções que não dependem dela."
+        },
+        {
+          "titulo": "Autenticação e segurança",
+          "texto": "Senhas de login são processadas pelo Firebase Authentication e não devem ser mantidas em cópia recuperável no Realtime Database. O sistema utiliza sessões e armazenamento local para autenticação, preferências e confirmação de envios. Controle de acesso e isolamento por conta reduzem riscos, mas não garantem segurança absoluta. Compartilhe dispositivos com cautela e encerre a sessão ao terminar."
+        },
+        {
+          "titulo": "Fornecedores e acesso",
+          "texto": "A infraestrutura utiliza Firebase/Google para autenticação e banco de dados; o site carrega bibliotecas essenciais do domínio gstatic.com. Conexões de rede podem envolver dados técnicos, como endereço IP. Administradores autorizados têm acesso aos dados necessários de sua conta. O vínculo comercial de revendedor, isoladamente, não autoriza acesso a funcionários ou registros. A configuração atual prevê um administrador central nas contas novas; essa forma de suporte precisa ser informada e contratualmente definida antes da operação comercial."
+        },
+        {
+          "titulo": "Localização, compartilhamento e transferências",
+          "texto": "A região e os subprocessadores da infraestrutura devem ser verificados pelo responsável. A instância atual do Realtime Database foi configurada nos Estados Unidos. Não é correto presumir armazenamento exclusivamente no Brasil. Antes de operar comercialmente, devem ser documentados os destinatários, as condições contratuais e o mecanismo de transferência internacional aplicável. Esta política não substitui essa avaliação."
+        },
+        {
+          "titulo": "Retenção e direitos",
+          "texto": "Registros de trabalho podem precisar ser conservados por obrigação legal ou para exercício de direitos. Não há exclusão automática de ponto ao cancelar acesso, retirar consentimento ou solicitar eliminação. O responsável deve definir períodos por categoria, revisar necessidade e restringir dados retidos. Solicitações de confirmação, acesso, correção, informação sobre compartilhamento, oposição, revisão e eliminação são avaliadas conforme a LGPD. Use a área de solicitações ou procure a empresa empregadora; a resposta deve explicar eventual retenção ou impossibilidade legal."
+        }
+      ]
+    },
+    {
+      "id": "termos",
+      "titulo": "Termos de uso e serviço",
+      "secoes": [
+        {
+          "titulo": "Escopo e estado do projeto",
+          "texto": "O MixPonto oferece funções de cadastro, registro e consulta de ponto em desenvolvimento. Estes termos são preliminares. Não há, por este documento, promessa de disponibilidade contínua, resultado financeiro, cálculo trabalhista infalível ou certificação como REP-P. O responsável deve validar os requisitos aplicáveis antes de usar o sistema como registro oficial de jornada."
+        },
+        {
+          "titulo": "Acesso e uso permitido",
+          "texto": "Cada usuário deve utilizar uma identidade própria e acessar apenas as contas e funções autorizadas. Não compartilhe senhas nem tente alterar requisições para acessar dados de outras empresas. O administrador deve manter vínculos e permissões atualizados. A identificação numérica da conta não é senha nem prova de autorização."
+        },
+        {
+          "titulo": "Responsabilidades",
+          "texto": "O empregador deve informar os trabalhadores, manter dados corretos, avaliar bases legais, supervisionar cálculos, atender direitos e definir retenção. O responsável pela plataforma deve manter medidas técnicas e organizacionais compatíveis com sua atuação. Nenhuma cláusula afasta direitos obrigatórios, responsabilidade legal aplicável ou acesso a autoridades e ao Judiciário."
+        },
+        {
+          "titulo": "Contratação e alterações",
+          "texto": "Não há fluxo de compra ou pagamento integrado nesta versão. Preço, suporte, duração, encerramento e eventual nível de serviço só podem ser apresentados em oferta real, clara e identificada. Alterações relevantes devem ser informadas antes de sua aplicação quando exigido. O uso destas telas não cria autorização genérica para tratamentos opcionais nem renúncia a direitos."
+        },
+        {
+          "titulo": "Conteúdo e propriedade intelectual",
+          "texto": "O código inclui componentes sujeitos às respectivas licenças, inclusive a licença MIT existente no repositório. Isso não transfere automaticamente direitos sobre fotos, marcas ou conteúdo enviado por usuários. Envie apenas imagens para as quais haja permissão de uso compatível com a finalidade. Não publique depoimentos inventados, avaliações atribuídas sem autorização ou alegações de certificação não comprovadas."
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "titulo": "Cookies e armazenamento local",
+      "secoes": [
+        {
+          "titulo": "Armazenamento necessário",
+          "texto": "O Firebase Authentication mantém a sessão conforme a opção de permanecer conectado. O site usa mixponto-manter-sessao para essa preferência, mixponto-conta-{uid} para a última conta escolhida e mixponto-troca na sessão para uma transição de até 60 segundos. O aviso de privacidade registra apenas sua versão e leitura neste dispositivo. Esses itens não são usados para publicidade."
+        },
+        {
+          "titulo": "Rastreamento opcional",
+          "texto": "Esta versão não instala Google Analytics, Meta Pixel, anúncios ou ferramentas de gravação de sessão. Não há consentimento de publicidade obrigatório para entrar. Qualquer integração opcional futura deve permanecer desligada até escolha específica, informada e revogável, quando essa for sua base legal. O controlador não deve inserir scripts de rastreamento diretamente no HTML para contornar esse controle."
+        },
+        {
+          "titulo": "Suas escolhas",
+          "texto": "Você pode consultar novamente o aviso no rodapé. Sair encerra a sessão de autenticação; o navegador e o Android também oferecem controles para limpar dados locais. Limpar dados do aplicativo com envios pendentes pode eliminar a confirmação local: confira antes se a batida chegou ao servidor. Esta operação não apaga registros de trabalho no banco."
+        }
+      ]
+    },
+    {
+      "id": "reembolso",
+      "titulo": "Cancelamento e reembolso",
+      "secoes": [
+        {
+          "titulo": "Situação atual",
+          "texto": "A versão atual não recebe pagamentos pelo site ou aplicativo. Não há preço, garantia comercial ou prazo de reembolso inventado neste texto. Antes de uma cobrança real, o fornecedor deve ser identificado e informar de forma clara o preço, as condições, o atendimento e como cancelar."
+        },
+        {
+          "titulo": "Direitos do consumidor",
+          "texto": "Quando houver relação de consumo e contratação fora do estabelecimento comercial, aplica-se o direito de arrependimento previsto no art. 49 do Código de Defesa do Consumidor, com prazo legal de sete dias e restituição nos termos da lei. A contratação entre empresas exige análise da relação concreta; estes termos não excluem direitos obrigatórios nem impõem renúncia antecipada."
+        },
+        {
+          "titulo": "Procedimento e dados de trabalho",
+          "texto": "Em contratação futura, a solicitação deverá seguir o canal efetivamente informado na oferta e receber confirmação de recebimento. Condições adicionais devem respeitar a legislação. Cancelar o serviço ou solicitar reembolso não determina a exclusão imediata de registros que precisem ser mantidos por obrigação legal ou exercício de direitos; acesso, exportação, retenção e descarte devem ser tratados separadamente."
+        }
+      ]
+    },
+    {
+      "id": "direitos",
+      "titulo": "Direitos e solicitações LGPD",
+      "secoes": [
+        {
+          "titulo": "Como solicitar",
+          "texto": "Na área Solicitações de privacidade, informe o ID da conta, entre com seu próprio login e escolha o tipo de pedido. O formulário não exige CPF, documento, fotografia ou data de nascimento. Há espaço opcional para contexto, limitado a 1.000 caracteres. Não inclua senhas, dados de saúde ou documentos nesse campo. O protocolo confirma o registro do pedido; não significa que acesso, exclusão, cancelamento ou reembolso já tenham sido executados."
+        },
+        {
+          "titulo": "Análise e resposta",
+          "texto": "A empresa responsável avalia a identidade de forma proporcional, a finalidade, os direitos de terceiros e as hipóteses legais de retenção. Confirmação e acesso observam as formas e os prazos do art. 19 da LGPD; os demais pedidos seguem as disposições e circunstâncias aplicáveis. O sistema não promete prazo uniforme de 15 dias para todo pedido. Decisões devem ser fundamentadas e comunicadas pelo canal de acompanhamento."
+        },
+        {
+          "titulo": "Sem vínculo ou com dificuldade de acesso",
+          "texto": "Se seu login ou vínculo não permitir o formulário, procure a empresa empregadora pelos canais que ela disponibiliza. O contato do responsável pela plataforma ainda não foi configurado. Você pode preparar e baixar um requerimento local, sem envio automático, e encaminhá-lo pelo canal efetivamente disponível. A ausência do formulário não elimina seus direitos."
+        }
+      ]
+    },
+    {
+      "id": "acessibilidade",
+      "titulo": "Acessibilidade",
+      "secoes": [
+        {
+          "titulo": "Recursos",
+          "texto": "O site oferece atalho para o conteúdo, foco visível, controles rotulados e navegação por teclado. A pesquisa de empresas aceita setas e Escape. O Android usa controles nativos, rótulos para campos e texto ajustável pelo sistema. Imagens decorativas usam descrição vazia; fotos informativas têm descrição contextual. Movimento reduzido respeita a preferência do sistema no site."
+        },
+        {
+          "titulo": "Limitações e melhoria contínua",
+          "texto": "Essas medidas não equivalem a uma certificação WCAG ou garantia de acessibilidade total. São necessários testes manuais com leitores de tela, ampliação, teclado e dispositivos reais. Barreiras podem ser relatadas na área de solicitações; descreva a tela, a ação e a dificuldade sem enviar dados pessoais desnecessários."
+        }
+      ]
+    },
+    {
+      "id": "licencas",
+      "titulo": "Imagens, licenças e transparência",
+      "secoes": [
+        {
+          "titulo": "Imagens e fontes",
+          "texto": "O site usa fontes do sistema e ícones definidos no código. Não foi adicionado banco de imagens ou fotografia comercial. Fotos de funcionários e perfis são conteúdo enviado pelos usuários; o envio não comprova titularidade ou licença. Cabe ao responsável justificar a necessidade e verificar os direitos de uso e de imagem. Imagens redundantes ao nome visível podem ter texto alternativo vazio para evitar repetição em leitor de tela."
+        },
+        {
+          "titulo": "Componentes e alegações",
+          "texto": "A licença MIT do projeto foi preservada. Firebase, Android e demais dependências continuam sujeitos às próprias licenças e condições. Nenhuma avaliação de cliente, selo de conformidade ou certificação foi criada. Exemplos de demonstração devem ser identificados como fictícios e não se confundem com depoimentos reais."
+        }
+      ]
+    }
+  ],
+  "fontes": [
+    {
+      "titulo": "LGPD — Lei 13.709/2018",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm"
+    },
+    {
+      "titulo": "Código de Defesa do Consumidor",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+    },
+    {
+      "titulo": "ANPD — Cookies e proteção de dados pessoais",
+      "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_cookies_e_protecao_de_dados_pessoais"
+    },
+    {
+      "titulo": "W3C — Contraste de texto",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+    }
+  ]
+}

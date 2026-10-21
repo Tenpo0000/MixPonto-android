@@ -1,0 +1,6 @@
+Registre um aplicativo Android no projeto Firebase mixponto-ffe50.
+Pacote: br.com.mixponto.app
+Baixe o google-services.json e coloque-o nesta pasta app/.
+Não use o arquivo JavaScript do site como substituto.
+Siga o guia INSTALACAO-SPARK.md para instalar o site e publicar somente as regras.
+Não publique Cloud Functions. O app usa Firebase Authentication e Realtime Database REST.

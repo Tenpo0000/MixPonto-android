@@ -1,0 +1,104 @@
+
+> test
+> firebase emulators:exec --project demo-mixponto --only database,auth "node --test --test-concurrency=1 test/*.test.mjs"
+
+i  emulators: Starting emulators: auth, database
+i  emulators: Detected demo project ID "demo-mixponto", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: Database Emulator logging to database-debug.log
+(node:21928) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+i  Running script: node --test --test-concurrency=1 test/*.test.mjs
+[2026-10-20T01:06:16.526Z]  @firebase/database: FIREBASE WARNING: update at /contas/a56fAPV5VtN1CsgxLbVqPcrF8Gfz failed: permission_denied 
+✔ titular define credenciais e funcionário entra e bate sem confirmar email (1015.508ms)
+✔ repetir com as mesmas credenciais conclui o mesmo login sem duplicar funcionário ou acesso (324.5178ms)
+✔ conclui uma conta criada antes de uma interrupção, sem criar outro login (272.9571ms)
+✔ não redefine a senha de email existente nem troca a sessão do titular ao falhar (225.7754ms)
+✔ valida funcionário, admissão e senha antes de criar conta (285.6905ms)
+[2026-10-20T01:06:17.777Z]  @firebase/database: FIREBASE WARNING: update at /contas/gp0F3wQJCAlBoesPu89vpOPQ0w2P failed: permission_denied 
+[2026-10-20T01:06:17.779Z]  @firebase/database: FIREBASE WARNING: set at /acessosMobile/FbwqkmPLg07u2FFQ3aUr5asCYCTf failed: permission_denied 
+✔ cadastro direto em Authentication não dá permissão para ponto ou autoautorização (141.4862ms)
+[2026-10-20T01:06:18.195Z]  @firebase/database: FIREBASE WARNING: update at / failed: permission_denied 
+✔ outra empresa não toma acesso já liberado mesmo conhecendo a senha (415.7376ms)
+✔ RFID antigo e UTC são normalizados no fuso de Brasília (23.8428ms)
+✔ une fontes, inclui ambos extremos e aceita um par (1.2201ms)
+✔ não cruza pares de funcionários ou de dias diferentes (0.6551ms)
+✔ admissão rejeita data impossível e começa à meia noite de Brasília (1.6933ms)
+[2026-10-20T01:06:18.869Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ nega acesso anônimo, inclusive batida (152.9064ms)
+[2026-10-20T01:06:19.070Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:19.118Z]  @firebase/database: FIREBASE WARNING: set at /solicitacoesMobile/forged failed: permission_denied 
+[2026-10-20T01:06:19.150Z]  @firebase/database: FIREBASE WARNING: set at /solicitacoesMobile/timetravel failed: permission_denied 
+✔ identidade confirma o email do token sem conceder acesso, inclusive sem verificação (278.6049ms)
+[2026-10-20T01:06:19.306Z]  @firebase/database: FIREBASE WARNING: update at /solicitacoesMobile/worker failed: permission_denied 
+✔ não permite ler ou alterar solicitação de outro login (156.0548ms)
+[2026-10-20T01:06:19.521Z]  @firebase/database: FIREBASE WARNING: set at /acessosMobile/newcomer failed: permission_denied 
+[2026-10-20T01:06:19.569Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ titular confirma a identidade e cria o vínculo; funcionário não se autoriza (262.4618ms)
+[2026-10-20T01:06:19.725Z]  @firebase/database: FIREBASE WARNING: set at /acessosMobile/worker failed: permission_denied 
+✔ titular de outra empresa não toma vínculo ativo nem consulta equipe (156.8114ms)
+[2026-10-20T01:06:19.896Z]  @firebase/database: FIREBASE WARNING: set at /acessosMobile/other failed: permission_denied 
+✔ conta titular não pode ser transformada em login de funcionário de outra empresa (170.348ms)
+✔ funcionário lê somente projeção e suas batidas (653.2729ms)
+✔ batida e relógio são confirmados juntos com horário de servidor (190.6026ms)
+[2026-10-20T01:06:20.865Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ sem vínculo não bate; login liberado pelo titular não exige verificação de email (175.1807ms)
+[2026-10-20T01:06:20.993Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:21.039Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:21.087Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ não aceita timestamp arbitrário, origem ou identidade forjada (171.9824ms)
+[2026-10-20T01:06:21.197Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:21.242Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ nega campos extras, inclusive manual e outro funcionário (154.3585ms)
+[2026-10-20T01:06:21.382Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/batidasMobile/f1/12345678-1234-4123-8123-123456789abc failed: permission_denied 
+[2026-10-20T01:06:21.428Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/controleBatidas/f1 failed: permission_denied 
+✔ não permite batida isolada nem manipular somente o controle (186.3703ms)
+[2026-10-20T01:06:21.542Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ bloqueia dois eventos num mesmo patch (113.3967ms)
+[2026-10-20T01:06:21.757Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:21.803Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/batidasMobile/f1/12345678-1234-4123-8123-123456789abc failed: permission_denied 
+[2026-10-20T01:06:21.834Z]  @firebase/database: FIREBASE WARNING: update at /contas/company/batidasMobile/f1/12345678-1234-4123-8123-123456789abc failed: permission_denied 
+✔ reenvio não duplica, não altera nem apaga evento existente (388.3896ms)
+[2026-10-20T01:06:22.091Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ intervalo é por funcionário, incluindo outro login e concorrência (160.8346ms)
+[2026-10-20T01:06:22.260Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ relógio de RFID recente impede ponto móvel; antigo permite (264.4876ms)
+[2026-10-20T01:06:22.527Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:22.651Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+[2026-10-20T01:06:22.792Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ demissão, revogação e admissão futura bloqueiam novas batidas (435.9286ms)
+[2026-10-20T01:06:22.931Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ mudança de admissão exige nova projeção e não usa criação da conta (139.4946ms)
+[2026-10-20T01:06:23.069Z]  @firebase/database: FIREBASE WARNING: update at /acessosMobile/worker failed: permission_denied 
+[2026-10-20T01:06:23.130Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ revogação preserva histórico e pode ser feita só pelo titular (245.0378ms)
+[2026-10-20T01:06:23.377Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/registros/2026-10-19/f1/forged failed: permission_denied 
+✔ contrato real RFID: titular lê cartão/cadastro e grava no caminho antigo (200.3151ms)
+[2026-10-20T01:06:23.501Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/mobileConfig/f1/admissaoEm failed: permission_denied 
+[2026-10-20T01:06:23.531Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/funcionarios/f1/status failed: permission_denied 
+[2026-10-20T01:06:23.577Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/meta/ownerUid failed: permission_denied 
+[2026-10-20T01:06:23.624Z]  @firebase/database: FIREBASE WARNING: set at /contas/company/meta/ownerUid failed: permission_denied 
+✔ funcionário não altera política, cadastro ou ownerUid (247.5161ms)
+[2026-10-20T01:06:23.748Z]  @firebase/database: FIREBASE WARNING: set at /titularesAutorizados/worker failed: permission_denied 
+[2026-10-20T01:06:23.796Z]  @firebase/database: FIREBASE WARNING: set at /contas/worker failed: permission_denied 
+[2026-10-20T01:06:23.968Z]  @firebase/database: FIREBASE WARNING: set at /acessosMobile/newcomer failed: permission_denied 
+✔ funcionário não se promove criando empresa ou allowlist (343.0398ms)
+[2026-10-20T01:06:24.263Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ fluxo integrado: módulo real do site vincula, app grava REST, consulta une e revogação bloqueia (297.1157ms)
+✔ firmware ETag: reserva concorrente não sobrescreve batida móvel (200.2618ms)
+[2026-10-20T01:06:24.624Z]  @firebase/database: FIREBASE WARNING: update at /contas/company failed: permission_denied 
+✔ firmware ETag: reserva confirmada impede nova batida móvel (158.7055ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9554.0834
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+!  Database Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

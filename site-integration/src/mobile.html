@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Acesso pelo celular · MixPonto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="mobile-admin">
+        <a href="index.html">← Cartão ponto</a>
+        <h1>Cadastro → Funcionário → Acesso pelo celular</h1>
+        <p>Defina o e-mail e a senha de acesso de um funcionário já cadastrado. Depois, entregue os dados para ele entrar no aplicativo.</p>
+        <button id="sair-titular" class="btn btn-secundario" hidden>Sair</button>
+        <form id="login-titular" class="mobile-form">
+            <h2>Entrar como titular</h2>
+            <label>E-mail <input id="email-titular" type="email" autocomplete="username" required></label>
+            <label>Senha <input id="senha-titular" type="password" autocomplete="current-password" required></label>
+            <button class="btn btn-primario">Entrar</button>
+        </form>
+        <section id="acessos-area" hidden>
+            <p id="titular-atual"></p>
+            <form id="vinculo-mobile" class="mobile-form">
+                <label>Funcionário existente <select id="funcionario-mobile" required></select></label>
+                <label>E-mail do funcionário <input id="email-mobile" type="email" required autocomplete="off"></label>
+                <label>Senha de acesso <input id="senha-mobile" type="password" required minlength="8" autocomplete="new-password"></label>
+                <label>Confirmar senha <input id="confirmar-senha-mobile" type="password" required minlength="8" autocomplete="new-password"></label>
+                <p>Use pelo menos 8 caracteres. Confira o funcionário antes de liberar o acesso. A senha não fica disponível para consulta depois.</p>
+                <button class="btn btn-primario">Criar e liberar acesso</button>
+            </form>
+            <h2>Acessos autorizados</h2>
+            <div id="lista-acessos"></div>
+        </section>
+        <p id="mobile-feedback" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="pages/mobile.js"></script>
+</body>
+</html>
